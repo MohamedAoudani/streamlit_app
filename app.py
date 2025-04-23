@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 import os
 
-model_path = "/home/mohamedplays56/python/machine learning/Streamlit/random_forest_model.pkl"
+model_path = "random_forest_model.pkl"
 
 if os.path.exists(model_path):
     with open(model_path, "rb") as file:
