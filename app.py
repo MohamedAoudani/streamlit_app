@@ -55,3 +55,8 @@ if st.button('Prédire'):
     prediction = model.predict(features)
 
     st.success(f"Résultat de la prédiction : {int(prediction[0])}")
+
+
+    # 🎉 Display celebration GIF
+    st.image("https://i.pinimg.com/originals/49/89/d0/4989d07460d909eac9b584438f66a5a1.gif", caption="Félicitations !", use_column_width=True)
+
