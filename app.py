@@ -5,11 +5,8 @@ import os
 
 model_path = "random_forest_model.pkl"
 
-if os.path.exists(model_path):
-    with open(model_path, "rb") as file:
-        model = pickle.load(file)
-else:
-    raise FileNotFoundError(f"Model file not found at {model_path}")
+with open("random_forest_model.pkl", "rb") as file:
+    model = pickle.load(file)
 
 # Titre de l'application
 st.title("Prédiction de Client")
